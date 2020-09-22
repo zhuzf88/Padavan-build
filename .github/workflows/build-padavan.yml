@@ -92,8 +92,10 @@ jobs:
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_IPERF3/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> .config
+        sed -i '/CONFIG_FIRMWARE_ENABLE_IPV6/d' .config
+        echo "CONFIG_FIRMWARE_ENABLE_IPV6=n" >> .config
         #sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config
         #echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config
         #sed -i '/CONFIG_FIRMWARE_INCLUDE_SSWAN/d' .config
